@@ -3,18 +3,17 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "hospital_mock_mcp500"
-version = "0.1.4"                         # 提升版本号（比如改到 0.1.4，防止版本冲突）
+name = "hospital-mock-mcp500"
+version = "0.1.5"
 description = "Hospital mock MCP server"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "mcp>=1.2.0",                         # 确保包含 FastMCP
+    "mcp>=1.2.0,<2.0.0",   # 限制在 1.x 版本的 mcp，防止自动升级到 2.0 破坏 FastMCP
 ]
 
 [project.scripts]
 hospital_mock_mcp500 = "my_mock_server.server:main"
-hospital-mock-mcp500 = "my_mock_server.server:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/my_mock_server"]
