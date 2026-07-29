@@ -1,10 +1,8 @@
-
-```json
 {
   "mcpServers": {
     "mock-data-server": {
-      "command": "python",
-      "args": ["server.py"]
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/rpint/NFYY-MOCK-TEST.git", "my-mock-mcp"]
     }
   }
 }
