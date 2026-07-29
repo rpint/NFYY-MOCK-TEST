@@ -1,3 +1,4 @@
+```
 {
   "mcpServers": {
     "mock-data-server": {
@@ -6,3 +7,4 @@
     }
   }
 }
+```
