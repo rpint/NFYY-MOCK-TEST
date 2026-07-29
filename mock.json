@@ -1,26 +1,462 @@
 {
-  "P001": {
-    "patient_id": "P001",
-    "name": "小明",
-    "age_months": 6,
-    "age_description": "6个月婴儿",
-    "weight_kg": 6.5,
-    "ckd_stage": "CKD 4期",
-    "dialysis_status": "非透析",
-    "fluid_restricted": true,
-    "blood_potassium": 5.2,
-    "notes": "因液体限制需要浓缩配方奶喂养"
-  },
-  "P002": {
-    "patient_id": "P002",
-    "name": "小红",
-    "age_months": 48,
-    "age_description": "4岁儿童",
-    "weight_kg": 14.0,
-    "ckd_stage": "CKD 5D期",
-    "dialysis_status": "腹膜透析 (PD)",
-    "fluid_restricted": false,
-    "blood_potassium": 4.5,
-    "notes": "日常腹膜透析，需评估蛋白质丢失补偿"
-  }
+  "patients": [
+    {
+      "patient_id": "P001",
+      "name": "张小明",
+      "age": 8,
+      "gender": "男",
+      "height_cm": 125.0,
+      "weight_kg": 22.5,
+      "diagnosis": "慢性肾脏病（CKD）- 肾病综合征",
+      "ckd_stage": "G2",
+      "admission_date": "2026-03-15",
+      "attending_doctor": "李主任",
+      "nutritionist": "王营养师",
+      "allergies": ["青霉素"],
+      "nutrition_assessments": [
+        {
+          "assessment_id": "NA001",
+          "date": "2026-03-16",
+          "sga_score": "B",
+          "sga_description": "中度营养不良",
+          "bmi": 14.4,
+          "bmi_percentile": "P10-P25",
+          "serum_albumin_g_l": 28.5,
+          "energy_intake_kcal_kg_d": 25.0,
+          "protein_intake_g_kg_d": 1.2,
+          "dietary_compliance": "一般",
+          "notes": "患儿食欲欠佳，蛋白质摄入偏低，需加强营养宣教"
+        },
+        {
+          "assessment_id": "NA002",
+          "date": "2026-05-20",
+          "sga_score": "A",
+          "sga_description": "营养状态良好",
+          "bmi": 15.1,
+          "bmi_percentile": "P25-P50",
+          "serum_albumin_g_l": 35.2,
+          "energy_intake_kcal_kg_d": 30.0,
+          "protein_intake_g_kg_d": 1.0,
+          "dietary_compliance": "良好",
+          "notes": "营养状态较前改善，继续当前方案"
+        }
+      ],
+      "diet_plans": [
+        {
+          "plan_id": "DP001",
+          "date": "2026-03-16",
+          "status": "adjusted",
+          "daily_energy_target_kcal": 1400,
+          "protein_limit_g_kg_d": 1.0,
+          "sodium_limit_mg_d": 1500,
+          "potassium_limit_mg_d": 2000,
+          "phosphorus_limit_mg_d": 800,
+          "fluid_limit_ml_d": 1200,
+          "recommended_foods": ["鸡蛋（1个/天）", "瘦肉（50g/天）", "米饭", "低钾蔬菜（白菜、黄瓜）", "苹果"],
+          "restricted_foods": ["香蕉", "橙子", "土豆", "坚果", "腌制品", "动物内脏"],
+          "meal_schedule": {
+            "breakfast": "小米粥 + 鸡蛋1个 + 少量白菜",
+            "lunch": "米饭 + 清炒瘦肉50g + 炒黄瓜",
+            "snack": "苹果半个",
+            "dinner": "面条 + 蒸蛋羹 + 炒白菜"
+          },
+          "supplements": ["碳酸钙D3（随餐）", "铁剂（餐后）"],
+          "notes": "低盐低磷饮食，蛋白质适量限制"
+        },
+        {
+          "plan_id": "DP002",
+          "date": "2026-05-20",
+          "status": "ongoing",
+          "daily_energy_target_kcal": 1500,
+          "protein_limit_g_kg_d": 1.0,
+          "sodium_limit_mg_d": 1500,
+          "potassium_limit_mg_d": 2000,
+          "phosphorus_limit_mg_d": 800,
+          "fluid_limit_ml_d": 1500,
+          "recommended_foods": ["鸡蛋（1个/天）", "鸡胸肉（60g/天）", "米饭", "低钾蔬菜", "梨", "蓝莓"],
+          "restricted_foods": ["香蕉", "橙子", "土豆", "坚果", "腌制品", "动物内脏", "可乐"],
+          "meal_schedule": {
+            "breakfast": "燕麦粥 + 鸡蛋1个 + 凉拌黄瓜",
+            "lunch": "米饭 + 清蒸鸡胸肉60g + 炒白菜",
+            "snack": "梨半个 + 蓝莓少量",
+            "dinner": "软米饭 + 番茄炒蛋 + 炒西葫芦"
+          },
+          "supplements": ["碳酸钙D3（随餐）", "复合维生素"],
+          "notes": "营养状态改善，适当增加能量摄入，维持蛋白质限制"
+        }
+      ],
+      "lab_results": [
+        {
+          "test_id": "LAB001",
+          "date": "2026-03-16",
+          "test_type": "renal_function",
+          "items": {
+            "BUN_mmol_L": 8.5,
+            "Scr_umol_L": 65.0,
+            "eGFR_ml_min_1_73m2": 92.0,
+            "CysC_mg_L": 1.1,
+            "urine_protein_g_24h": 2.8
+          }
+        },
+        {
+          "test_id": "LAB002",
+          "date": "2026-03-16",
+          "test_type": "electrolytes",
+          "items": {
+            "Na_mmol_L": 138,
+            "K_mmol_L": 4.8,
+            "Ca_mmol_L": 2.15,
+            "P_mmol_L": 1.65,
+            "Cl_mmol_L": 102,
+            "HCO3_mmol_L": 22
+          }
+        },
+        {
+          "test_id": "LAB003",
+          "date": "2026-03-16",
+          "test_type": "nutrition_markers",
+          "items": {
+            "serum_albumin_g_L": 28.5,
+            "prealbumin_mg_L": 150,
+            "transferrin_g_L": 1.8,
+            "hemoglobin_g_L": 105,
+            "ferritin_ug_L": 45,
+            "vitamin_D_ng_mL": 18,
+            "PTH_pg_mL": 85
+          }
+        },
+        {
+          "test_id": "LAB004",
+          "date": "2026-05-20",
+          "test_type": "renal_function",
+          "items": {
+            "BUN_mmol_L": 7.2,
+            "Scr_umol_L": 58.0,
+            "eGFR_ml_min_1_73m2": 98.0,
+            "CysC_mg_L": 0.95,
+            "urine_protein_g_24h": 1.2
+          }
+        },
+        {
+          "test_id": "LAB005",
+          "date": "2026-05-20",
+          "test_type": "nutrition_markers",
+          "items": {
+            "serum_albumin_g_L": 35.2,
+            "prealbumin_mg_L": 210,
+            "transferrin_g_L": 2.2,
+            "hemoglobin_g_L": 118,
+            "ferritin_ug_L": 60,
+            "vitamin_D_ng_mL": 28,
+            "PTH_pg_mL": 55
+          }
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "INT001",
+          "date": "2026-03-16",
+          "type": "dietary_counseling",
+          "status": "completed",
+          "description": "初始营养宣教：低盐低磷饮食指导，蛋白质摄入控制",
+          "outcome": "家长理解并配合，患儿接受度一般"
+        },
+        {
+          "intervention_id": "INT002",
+          "date": "2026-04-01",
+          "type": "supplement_adjustment",
+          "status": "completed",
+          "description": "增加碳酸钙D3剂量，补充铁剂纠正贫血",
+          "outcome": "维生素D水平回升，血红蛋白改善"
+        },
+        {
+          "intervention_id": "INT003",
+          "date": "2026-05-20",
+          "type": "diet_plan_update",
+          "status": "ongoing",
+          "description": "根据复查结果调整饮食方案，适当增加能量摄入",
+          "outcome": "进行中，待下次复查评估"
+        }
+      ]
+    },
+    {
+      "patient_id": "P002",
+      "name": "李小花",
+      "age": 5,
+      "gender": "女",
+      "height_cm": 108.0,
+      "weight_kg": 16.8,
+      "diagnosis": "慢性肾脏病（CKD）- 先天性肾发育不良",
+      "ckd_stage": "G3b",
+      "admission_date": "2026-01-10",
+      "attending_doctor": "赵主任",
+      "nutritionist": "王营养师",
+      "allergies": [],
+      "nutrition_assessments": [
+        {
+          "assessment_id": "NA003",
+          "date": "2026-01-11",
+          "sga_score": "C",
+          "sga_description": "重度营养不良",
+          "bmi": 14.4,
+          "bmi_percentile": "<P3",
+          "serum_albumin_g_l": 25.0,
+          "energy_intake_kcal_kg_d": 20.0,
+          "protein_intake_g_kg_d": 0.8,
+          "dietary_compliance": "差",
+          "notes": "患儿生长迟缓明显，能量和蛋白质摄入均不足，需积极营养干预"
+        },
+        {
+          "assessment_id": "NA004",
+          "date": "2026-04-15",
+          "sga_score": "B",
+          "sga_description": "中度营养不良",
+          "bmi": 14.8,
+          "bmi_percentile": "P3-P10",
+          "serum_albumin_g_l": 30.5,
+          "energy_intake_kcal_kg_d": 28.0,
+          "protein_intake_g_kg_d": 0.9,
+          "dietary_compliance": "一般",
+          "notes": "营养状态有所改善，但仍需加强"
+        }
+      ],
+      "diet_plans": [
+        {
+          "plan_id": "DP003",
+          "date": "2026-01-11",
+          "status": "adjusted",
+          "daily_energy_target_kcal": 1100,
+          "protein_limit_g_kg_d": 0.8,
+          "sodium_limit_mg_d": 1200,
+          "potassium_limit_mg_d": 1500,
+          "phosphorus_limit_mg_d": 600,
+          "fluid_limit_ml_d": 1000,
+          "recommended_foods": ["鸡蛋（1个/天）", "鱼肉（40g/天）", "软米饭", "低钾蔬菜泥", "苹果泥"],
+          "restricted_foods": ["香蕉", "橙子", "土豆", "坚果", "腌制品", "动物内脏", "加工食品"],
+          "meal_schedule": {
+            "breakfast": "小米糊 + 蒸蛋羹",
+            "lunch": "软米饭 + 清蒸鱼肉40g + 蔬菜泥",
+            "snack": "苹果泥",
+            "dinner": "面条糊 + 蛋花汤 + 炒白菜碎"
+          },
+          "supplements": ["碳酸钙D3（随餐）", "铁剂", "EPO（促红素）"],
+          "notes": "CKD G3b期，严格限制蛋白质和磷，注意食物细软适合幼儿"
+        }
+      ],
+      "lab_results": [
+        {
+          "test_id": "LAB006",
+          "date": "2026-01-11",
+          "test_type": "renal_function",
+          "items": {
+            "BUN_mmol_L": 12.5,
+            "Scr_umol_L": 95.0,
+            "eGFR_ml_min_1_73m2": 42.0,
+            "CysC_mg_L": 1.8,
+            "urine_protein_g_24h": 0.8
+          }
+        },
+        {
+          "test_id": "LAB007",
+          "date": "2026-01-11",
+          "test_type": "electrolytes",
+          "items": {
+            "Na_mmol_L": 135,
+            "K_mmol_L": 5.2,
+            "Ca_mmol_L": 2.05,
+            "P_mmol_L": 1.95,
+            "Cl_mmol_L": 100,
+            "HCO3_mmol_L": 19
+          }
+        },
+        {
+          "test_id": "LAB008",
+          "date": "2026-01-11",
+          "test_type": "nutrition_markers",
+          "items": {
+            "serum_albumin_g_L": 25.0,
+            "prealbumin_mg_L": 110,
+            "transferrin_g_L": 1.5,
+            "hemoglobin_g_L": 88,
+            "ferritin_ug_L": 30,
+            "vitamin_D_ng_mL": 12,
+            "PTH_pg_mL": 120
+          }
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "INT004",
+          "date": "2026-01-11",
+          "type": "dietary_counseling",
+          "status": "completed",
+          "description": "初始营养宣教：CKD G3b期饮食管理，重点限磷限钾",
+          "outcome": "家长初步了解，但执行困难"
+        },
+        {
+          "intervention_id": "INT005",
+          "date": "2026-02-01",
+          "type": "supplement_adjustment",
+          "status": "ongoing",
+          "description": "启动EPO治疗纠正贫血，加大碳酸钙D3剂量控制高磷",
+          "outcome": "进行中"
+        },
+        {
+          "intervention_id": "INT006",
+          "date": "2026-04-15",
+          "type": "growth_monitoring",
+          "status": "ongoing",
+          "description": "生长监测：每月测量身高体重，评估追赶生长情况",
+          "outcome": "身高增长速率有所改善"
+        }
+      ]
+    },
+    {
+      "patient_id": "P003",
+      "name": "王小强",
+      "age": 12,
+      "gender": "男",
+      "height_cm": 148.0,
+      "weight_kg": 38.0,
+      "diagnosis": "慢性肾脏病（CKD）- IgA肾病",
+      "ckd_stage": "G1",
+      "admission_date": "2026-06-01",
+      "attending_doctor": "李主任",
+      "nutritionist": "陈营养师",
+      "allergies": ["海鲜"],
+      "nutrition_assessments": [
+        {
+          "assessment_id": "NA005",
+          "date": "2026-06-02",
+          "sga_score": "A",
+          "sga_description": "营养状态良好",
+          "bmi": 17.3,
+          "bmi_percentile": "P50-P75",
+          "serum_albumin_g_l": 40.0,
+          "energy_intake_kcal_kg_d": 35.0,
+          "protein_intake_g_kg_d": 1.5,
+          "dietary_compliance": "良好",
+          "notes": "营养状态良好，但蛋白质摄入偏高，需适当调整"
+        }
+      ],
+      "diet_plans": [
+        {
+          "plan_id": "DP004",
+          "date": "2026-06-02",
+          "status": "ongoing",
+          "daily_energy_target_kcal": 2200,
+          "protein_limit_g_kg_d": 1.0,
+          "sodium_limit_mg_d": 2000,
+          "potassium_limit_mg_d": 3000,
+          "phosphorus_limit_mg_d": 1200,
+          "fluid_limit_ml_d": 2000,
+          "recommended_foods": ["鸡蛋（1个/天）", "瘦肉（80g/天）", "米饭", "各类蔬菜", "苹果", "西瓜（少量）"],
+          "restricted_foods": ["海鲜（过敏）", "腌制品", "动物内脏", "高磷加工食品"],
+          "meal_schedule": {
+            "breakfast": "牛奶200ml + 全麦面包 + 鸡蛋1个",
+            "lunch": "米饭 + 炒瘦肉80g + 炒时蔬",
+            "snack": "苹果1个",
+            "dinner": "米饭 + 番茄炒蛋 + 炒青菜"
+          },
+          "supplements": ["碳酸钙D3（随餐）"],
+          "notes": "CKD G1期，营养状态好，重点控制蛋白质不要过量，避免海鲜（过敏）"
+        }
+      ],
+      "lab_results": [
+        {
+          "test_id": "LAB009",
+          "date": "2026-06-02",
+          "test_type": "renal_function",
+          "items": {
+            "BUN_mmol_L": 5.5,
+            "Scr_umol_L": 52.0,
+            "eGFR_ml_min_1_73m2": 110.0,
+            "CysC_mg_L": 0.8,
+            "urine_protein_g_24h": 0.5
+          }
+        },
+        {
+          "test_id": "LAB010",
+          "date": "2026-06-02",
+          "test_type": "electrolytes",
+          "items": {
+            "Na_mmol_L": 140,
+            "K_mmol_L": 4.2,
+            "Ca_mmol_L": 2.35,
+            "P_mmol_L": 1.30,
+            "Cl_mmol_L": 103,
+            "HCO3_mmol_L": 24
+          }
+        },
+        {
+          "test_id": "LAB011",
+          "date": "2026-06-02",
+          "test_type": "nutrition_markers",
+          "items": {
+            "serum_albumin_g_L": 40.0,
+            "prealbumin_mg_L": 280,
+            "transferrin_g_L": 2.8,
+            "hemoglobin_g_L": 135,
+            "ferritin_ug_L": 80,
+            "vitamin_D_ng_mL": 32,
+            "PTH_pg_mL": 35
+          }
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "INT007",
+          "date": "2026-06-02",
+          "type": "dietary_counseling",
+          "status": "ongoing",
+          "description": "营养宣教：适当控制蛋白质摄入，避免高磷食物，注意海鲜过敏",
+          "outcome": "进行中"
+        }
+      ]
+    }
+  ],
+  "knowledge_base": [
+    {
+      "id": "KB001",
+      "title": "CKD各分期蛋白质摄入推荐",
+      "content": "CKD G1-G2期：蛋白质摄入0.8-1.0 g/kg/d；CKD G3-G5期（非透析）：0.6-0.8 g/kg/d；透析期：1.0-1.2 g/kg/d。儿童需保证最低蛋白质需求以支持生长发育，不建议过度限制。",
+      "tags": ["蛋白质限制", "CKD分期", "营养管理"]
+    },
+    {
+      "id": "KB002",
+      "title": "儿童CKD高钾血症饮食管理",
+      "content": "血钾>5.5 mmol/L时需严格限钾（<2000mg/d）。避免高钾食物：香蕉、橙子、土豆、番茄酱、坚果等。蔬菜可先浸泡切碎后水煮去钾。避免使用低钠盐（含氯化钾）。",
+      "tags": ["高钾血症", "电解质", "饮食管理"]
+    },
+    {
+      "id": "KB003",
+      "title": "儿童CKD钙磷代谢管理",
+      "content": "CKD G3期起需监测钙磷和PTH。限磷饮食（600-1200mg/d视年龄），避免高磷食物（动物内脏、加工食品、可乐）。碳酸钙作为磷结合剂需随餐服用。维生素D不足时补充活性维生素D。",
+      "tags": ["钙磷代谢", "高磷血症", "PTH", "维生素D"]
+    },
+    {
+      "id": "KB004",
+      "title": "儿童CKD生长迟缓营养干预",
+      "content": "CKD儿童生长迟缓发生率高。需保证充足能量摄入（推荐同龄RDA的100-120%），监测身高增长速率。必要时使用生长激素。营养干预目标：BMI维持在P25-P75，身高追赶生长。",
+      "tags": ["生长迟缓", "能量摄入", "生长激素"]
+    },
+    {
+      "id": "KB005",
+      "title": "儿童透析患者营养管理要点",
+      "content": "血液透析：蛋白质1.0-1.2 g/kg/d，能量30-35 kcal/kg/d。腹膜透析：蛋白质1.0-1.2 g/kg/d，注意腹透液含糖带来的额外热量。透析日需额外补充水溶性维生素。监测透析充分性对营养的影响。",
+      "tags": ["透析营养", "血液透析", "腹膜透析"]
+    },
+    {
+      "id": "KB006",
+      "title": "肾病综合征患儿营养注意事项",
+      "content": "大量蛋白尿期间不建议高蛋白饮食（会加重蛋白尿），蛋白质摄入0.8-1.0 g/kg/d。水肿期严格限钠（<2g/d）。使用激素期间注意补钙、控制食欲亢进导致的肥胖。",
+      "tags": ["肾病综合征", "蛋白尿", "水肿", "激素"]
+    },
+    {
+      "id": "KB007",
+      "title": "儿童CKD贫血的营养支持",
+      "content": "CKD贫血常见，需监测血红蛋白和铁代谢指标。铁缺乏时口服铁剂（餐后服用减少胃肠刺激），严重时静脉补铁。EPO治疗期间需保证充足铁储备。饮食增加富含铁食物（红肉适量），同时补充维生素C促进铁吸收。",
+      "tags": ["贫血", "铁缺乏", "EPO", "营养支持"]
+    }
+  ]
 }
