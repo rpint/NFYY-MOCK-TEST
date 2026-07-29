@@ -1,0 +1,26 @@
+{
+  "P001": {
+    "patient_id": "P001",
+    "name": "小明",
+    "age_months": 6,
+    "age_description": "6个月婴儿",
+    "weight_kg": 6.5,
+    "ckd_stage": "CKD 4期",
+    "dialysis_status": "非透析",
+    "fluid_restricted": true,
+    "blood_potassium": 5.2,
+    "notes": "因液体限制需要浓缩配方奶喂养"
+  },
+  "P002": {
+    "patient_id": "P002",
+    "name": "小红",
+    "age_months": 48,
+    "age_description": "4岁儿童",
+    "weight_kg": 14.0,
+    "ckd_stage": "CKD 5D期",
+    "dialysis_status": "腹膜透析 (PD)",
+    "fluid_restricted": false,
+    "blood_potassium": 4.5,
+    "notes": "日常腹膜透析，需评估蛋白质丢失补偿"
+  }
+}
