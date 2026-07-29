@@ -13,3 +13,19 @@
     }
   }
 }
+
+---
+
+### 2. `mcp.json`（配置文件）
+
+在根目录下创建 `mcp.json`，确保平台能够双重识别启动命令：
+
+```json
+{
+  "mcpServers": {
+    "mock-data-server": {
+      "command": "python",
+      "args": ["server.py"]
+    }
+  }
+}
