@@ -1,31 +1,36 @@
-# 🏥 童肾营养师 MCP Server
+---
+# 必须包含的元数据区域
+title: "童肾营养师-儿童肾病营养辅助决策MCP"
+description: "提供儿童肾病患儿营养评估、饮食方案查询及实验室指标分析的MCP服务"
+tags:
+  - mcp
+  - healthcare
+  - nutrition
+  - pediatric
+license: MIT
+python_version: "3.10"
+---
 
-> 儿童肾脏病营养辅助决策数据查询服务
+# 童肾营养师 MCP Server
 
-## 📌 简介
+这是一个专为“童肾营养师”多智能体系统设计的模型上下文协议服务。它允许智能体查询模拟的儿童肾病临床营养数据。
 
-本 MCP Server 是 **"童肾营养师"多智能体辅助决策系统** 的数据查询模块，
-基于华为 Nexent 平台开发，通过 ModelScope MCP 广场对外提供服务。
+## 🚀 功能特性
 
-其他智能体可通过标准 MCP 协议调用本服务，查询患儿营养相关的模拟数据。
+- **患儿信息查询**: 获取患儿的年龄、体重、肾病类型等基础信息。
+- **营养状况评估**: 基于生化指标（如白蛋白、血红蛋白）自动评估营养风险。
+- **个性化饮食方案**: 根据肾病分期（CKD 1-5期）推荐蛋白质和热量摄入标准。
+- **实验室指标解读**: 查询血肌酐、尿素氮等关键指标的参考范围及临床意义。
 
-## 🔧 可用工具（Tools）
-
-| 工具名称 | 功能说明 |
-|---------|---------|
-| `list_patients` | 获取所有患儿基本信息列表 |
-| `get_patient_detail` | 查询指定患儿完整基本信息 |
-| `get_nutrition_assessment` | 查询营养评估记录（SGA、BMI、白蛋白等） |
-| `get_diet_plan` | 查询饮食方案（能量/蛋白质/电解质限制等） |
-| `get_lab_results` | 查询实验室检查指标（肾功能/电解质/营养指标等） |
-| `get_interventions` | 查询营养干预记录 |
-| `get_nutrition_knowledge` | 查询儿童肾脏病营养知识库 |
-| `get_system_info` | 获取系统信息和可用工具列表 |
-
-## 🚀 快速开始
+## 🛠️ 部署与使用
 
 ### 本地运行
+确保已安装 Python 3.10+ 和 uvx/npm。
 
 ```bash
+# 使用 uvx 运行 (推荐)
+uvx pediatric-renal-nutrition-mcp
+
+# 或使用 pip 安装后运行
 pip install -r requirements.txt
 python app.py
