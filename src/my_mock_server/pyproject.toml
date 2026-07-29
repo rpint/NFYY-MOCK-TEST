@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hospital-mock-mcp500"         # 确保这是在 PyPI 上唯一的包名
+version = "0.1.0"
+description = "Hospital mock MCP server with embedded mock.json"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+hospital-mock-mcp = "my_mock_server.server:main"
