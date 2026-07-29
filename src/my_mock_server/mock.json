@@ -2,237 +2,148 @@
   "patients": [
     {
       "patient_id": "P001",
-      "name": "张小明",
-      "age": 8,
+      "name": "陈宇轩",
+      "age": 7,
       "gender": "男",
-      "height_cm": 125.0,
-      "weight_kg": 22.5,
-      "diagnosis": "慢性肾脏病（CKD）- 肾病综合征",
-      "ckd_stage": "G2",
-      "admission_date": "2026-03-15",
+      "height_cm": 122.0,
+      "weight_kg": 23.5,
+      "diagnosis": "慢性肾脏病（CKD）- 肾病综合征（激素依赖型）",
+      "ckd_stage": "G1",
+      "admission_date": "2026-08-10",
       "attending_doctor": "李主任",
       "nutritionist": "王营养师",
-      "allergies": ["青霉素"],
+      "allergies": ["尘螨"],
       "nutrition_assessments": [
         {
           "assessment_id": "NA001",
-          "date": "2026-03-16",
+          "date": "2026-08-11",
           "sga_score": "B",
           "sga_description": "中度营养不良",
-          "bmi": 14.4,
-          "bmi_percentile": "P10-P25",
-          "serum_albumin_g_l": 28.5,
-          "energy_intake_kcal_kg_d": 25.0,
-          "protein_intake_g_kg_d": 1.2,
+          "bmi": 15.8,
+          "bmi_percentile": "P50-P75",
+          "serum_albumin_g_l": 29.0,
+          "energy_intake_kcal_kg_d": 32.0,
+          "protein_intake_g_kg_d": 1.4,
           "dietary_compliance": "一般",
-          "notes": "患儿食欲欠佳，蛋白质摄入偏低，需加强营养宣教"
-        },
-        {
-          "assessment_id": "NA002",
-          "date": "2026-05-20",
-          "sga_score": "A",
-          "sga_description": "营养状态良好",
-          "bmi": 15.1,
-          "bmi_percentile": "P25-P50",
-          "serum_albumin_g_l": 35.2,
-          "energy_intake_kcal_kg_d": 30.0,
-          "protein_intake_g_kg_d": 1.0,
-          "dietary_compliance": "良好",
-          "notes": "营养状态较前改善，继续当前方案"
+          "notes": "激素治疗期食欲亢进，体重增长过快，需控制总热量和碳水化合物摄入"
         }
       ],
       "diet_plans": [
         {
           "plan_id": "DP001",
-          "date": "2026-03-16",
-          "status": "adjusted",
+          "date": "2026-08-11",
+          "status": "ongoing",
           "daily_energy_target_kcal": 1400,
           "protein_limit_g_kg_d": 1.0,
           "sodium_limit_mg_d": 1500,
-          "potassium_limit_mg_d": 2000,
-          "phosphorus_limit_mg_d": 800,
+          "potassium_limit_mg_d": 2500,
+          "phosphorus_limit_mg_d": 900,
           "fluid_limit_ml_d": 1200,
-          "recommended_foods": ["鸡蛋（1个/天）", "瘦肉（50g/天）", "米饭", "低钾蔬菜（白菜、黄瓜）", "苹果"],
-          "restricted_foods": ["香蕉", "橙子", "土豆", "坚果", "腌制品", "动物内脏"],
-          "meal_schedule": {
-            "breakfast": "小米粥 + 鸡蛋1个 + 少量白菜",
-            "lunch": "米饭 + 清炒瘦肉50g + 炒黄瓜",
-            "snack": "苹果半个",
-            "dinner": "面条 + 蒸蛋羹 + 炒白菜"
-          },
-          "supplements": ["碳酸钙D3（随餐）", "铁剂（餐后）"],
-          "notes": "低盐低磷饮食，蛋白质适量限制"
-        },
-        {
-          "plan_id": "DP002",
-          "date": "2026-05-20",
-          "status": "ongoing",
-          "daily_energy_target_kcal": 1500,
-          "protein_limit_g_kg_d": 1.0,
-          "sodium_limit_mg_d": 1500,
-          "potassium_limit_mg_d": 2000,
-          "phosphorus_limit_mg_d": 800,
-          "fluid_limit_ml_d": 1500,
-          "recommended_foods": ["鸡蛋（1个/天）", "鸡胸肉（60g/天）", "米饭", "低钾蔬菜", "梨", "蓝莓"],
-          "restricted_foods": ["香蕉", "橙子", "土豆", "坚果", "腌制品", "动物内脏", "可乐"],
+          "recommended_foods": ["鸡蛋（1个/天）", "鸡胸肉（50g/天）", "粗粮饭", "高纤维蔬菜", "柚子"],
+          "restricted_foods": ["甜食", "油炸食品", "腌制品", "高糖饮料"],
           "meal_schedule": {
             "breakfast": "燕麦粥 + 鸡蛋1个 + 凉拌黄瓜",
-            "lunch": "米饭 + 清蒸鸡胸肉60g + 炒白菜",
-            "snack": "梨半个 + 蓝莓少量",
-            "dinner": "软米饭 + 番茄炒蛋 + 炒西葫芦"
+            "lunch": "杂粮饭 + 清蒸鸡胸肉50g + 炒芹菜",
+            "snack": "柚子2瓣",
+            "dinner": "荞麦面 + 番茄蛋花汤 + 炒白菜"
           },
-          "supplements": ["碳酸钙D3（随餐）", "复合维生素"],
-          "notes": "营养状态改善，适当增加能量摄入，维持蛋白质限制"
+          "supplements": ["碳酸钙D3（随餐）", "活性维生素D"],
+          "notes": "激素治疗期，严格控制碳水化合物和总热量，防止向心性肥胖，注意补钙"
         }
       ],
       "lab_results": [
         {
           "test_id": "LAB001",
-          "date": "2026-03-16",
+          "date": "2026-08-11",
           "test_type": "renal_function",
           "items": {
-            "BUN_mmol_L": 8.5,
-            "Scr_umol_L": 65.0,
-            "eGFR_ml_min_1_73m2": 92.0,
-            "CysC_mg_L": 1.1,
-            "urine_protein_g_24h": 2.8
+            "BUN_mmol_L": 5.8,
+            "Scr_umol_L": 48.0,
+            "eGFR_ml_min_1_73m2": 105.0,
+            "CysC_mg_L": 0.85,
+            "urine_protein_g_24h": 1.8
           }
         },
         {
           "test_id": "LAB002",
-          "date": "2026-03-16",
+          "date": "2026-08-11",
           "test_type": "electrolytes",
           "items": {
-            "Na_mmol_L": 138,
-            "K_mmol_L": 4.8,
-            "Ca_mmol_L": 2.15,
-            "P_mmol_L": 1.65,
-            "Cl_mmol_L": 102,
-            "HCO3_mmol_L": 22
+            "Na_mmol_L": 140,
+            "K_mmol_L": 4.3,
+            "Ca_mmol_L": 2.25,
+            "P_mmol_L": 1.45,
+            "Cl_mmol_L": 103,
+            "HCO3_mmol_L": 24
           }
         },
         {
           "test_id": "LAB003",
-          "date": "2026-03-16",
+          "date": "2026-08-11",
           "test_type": "nutrition_markers",
           "items": {
-            "serum_albumin_g_L": 28.5,
-            "prealbumin_mg_L": 150,
-            "transferrin_g_L": 1.8,
-            "hemoglobin_g_L": 105,
-            "ferritin_ug_L": 45,
-            "vitamin_D_ng_mL": 18,
-            "PTH_pg_mL": 85
-          }
-        },
-        {
-          "test_id": "LAB004",
-          "date": "2026-05-20",
-          "test_type": "renal_function",
-          "items": {
-            "BUN_mmol_L": 7.2,
-            "Scr_umol_L": 58.0,
-            "eGFR_ml_min_1_73m2": 98.0,
-            "CysC_mg_L": 0.95,
-            "urine_protein_g_24h": 1.2
-          }
-        },
-        {
-          "test_id": "LAB005",
-          "date": "2026-05-20",
-          "test_type": "nutrition_markers",
-          "items": {
-            "serum_albumin_g_L": 35.2,
-            "prealbumin_mg_L": 210,
-            "transferrin_g_L": 2.2,
-            "hemoglobin_g_L": 118,
+            "serum_albumin_g_L": 29.0,
+            "prealbumin_mg_L": 160,
+            "transferrin_g_L": 2.0,
+            "hemoglobin_g_L": 125,
             "ferritin_ug_L": 60,
-            "vitamin_D_ng_mL": 28,
-            "PTH_pg_mL": 55
+            "vitamin_D_ng_mL": 18,
+            "PTH_pg_mL": 45
           }
         }
       ],
       "interventions": [
         {
           "intervention_id": "INT001",
-          "date": "2026-03-16",
+          "date": "2026-08-11",
           "type": "dietary_counseling",
-          "status": "completed",
-          "description": "初始营养宣教：低盐低磷饮食指导，蛋白质摄入控制",
-          "outcome": "家长理解并配合，患儿接受度一般"
-        },
-        {
-          "intervention_id": "INT002",
-          "date": "2026-04-01",
-          "type": "supplement_adjustment",
-          "status": "completed",
-          "description": "增加碳酸钙D3剂量，补充铁剂纠正贫血",
-          "outcome": "维生素D水平回升，血红蛋白改善"
-        },
-        {
-          "intervention_id": "INT003",
-          "date": "2026-05-20",
-          "type": "diet_plan_update",
           "status": "ongoing",
-          "description": "根据复查结果调整饮食方案，适当增加能量摄入",
-          "outcome": "进行中，待下次复查评估"
+          "description": "激素期体重管理宣教，指导高纤维低GI饮食",
+          "outcome": "进行中，家长表示配合"
         }
       ]
     },
     {
       "patient_id": "P002",
-      "name": "李小花",
+      "name": "林悦彤",
       "age": 5,
       "gender": "女",
-      "height_cm": 108.0,
-      "weight_kg": 16.8,
+      "height_cm": 105.0,
+      "weight_kg": 16.0,
       "diagnosis": "慢性肾脏病（CKD）- 先天性肾发育不良",
       "ckd_stage": "G3b",
-      "admission_date": "2026-01-10",
+      "admission_date": "2026-07-15",
       "attending_doctor": "赵主任",
-      "nutritionist": "王营养师",
-      "allergies": [],
+      "nutritionist": "陈营养师",
+      "allergies": ["牛奶"],
       "nutrition_assessments": [
         {
-          "assessment_id": "NA003",
-          "date": "2026-01-11",
+          "assessment_id": "NA002",
+          "date": "2026-07-16",
           "sga_score": "C",
           "sga_description": "重度营养不良",
-          "bmi": 14.4,
+          "bmi": 14.5,
           "bmi_percentile": "<P3",
-          "serum_albumin_g_l": 25.0,
-          "energy_intake_kcal_kg_d": 20.0,
-          "protein_intake_g_kg_d": 0.8,
+          "serum_albumin_g_l": 26.5,
+          "energy_intake_kcal_kg_d": 22.0,
+          "protein_intake_g_kg_d": 0.7,
           "dietary_compliance": "差",
-          "notes": "患儿生长迟缓明显，能量和蛋白质摄入均不足，需积极营养干预"
-        },
-        {
-          "assessment_id": "NA004",
-          "date": "2026-04-15",
-          "sga_score": "B",
-          "sga_description": "中度营养不良",
-          "bmi": 14.8,
-          "bmi_percentile": "P3-P10",
-          "serum_albumin_g_l": 30.5,
-          "energy_intake_kcal_kg_d": 28.0,
-          "protein_intake_g_kg_d": 0.9,
-          "dietary_compliance": "一般",
-          "notes": "营养状态有所改善，但仍需加强"
+          "notes": "生长迟缓明显，牛奶过敏导致钙摄入不足，需调整补钙方案并加强营养干预"
         }
       ],
       "diet_plans": [
         {
-          "plan_id": "DP003",
-          "date": "2026-01-11",
-          "status": "adjusted",
+          "plan_id": "DP002",
+          "date": "2026-07-16",
+          "status": "ongoing",
           "daily_energy_target_kcal": 1100,
           "protein_limit_g_kg_d": 0.8,
           "sodium_limit_mg_d": 1200,
           "potassium_limit_mg_d": 1500,
           "phosphorus_limit_mg_d": 600,
-          "fluid_limit_ml_d": 1000,
-          "recommended_foods": ["鸡蛋（1个/天）", "鱼肉（40g/天）", "软米饭", "低钾蔬菜泥", "苹果泥"],
-          "restricted_foods": ["香蕉", "橙子", "土豆", "坚果", "腌制品", "动物内脏", "加工食品"],
+          "fluid_limit_ml_d": 900,
+          "recommended_foods": ["鸡蛋（1个/天）", "鱼肉（40g/天）", "软米饭", "低钾蔬菜泥", "苹果泥", "豆浆（少量）"],
+          "restricted_foods": ["牛奶及奶制品（过敏）", "香蕉", "橙子", "土豆", "加工食品"],
           "meal_schedule": {
             "breakfast": "小米糊 + 蒸蛋羹",
             "lunch": "软米饭 + 清蒸鱼肉40g + 蔬菜泥",
@@ -240,109 +151,101 @@
             "dinner": "面条糊 + 蛋花汤 + 炒白菜碎"
           },
           "supplements": ["碳酸钙D3（随餐）", "铁剂", "EPO（促红素）"],
-          "notes": "CKD G3b期，严格限制蛋白质和磷，注意食物细软适合幼儿"
+          "notes": "CKD G3b期，严格限制蛋白质和磷，严格避免牛奶，注意食物细软适合幼儿"
         }
       ],
       "lab_results": [
         {
-          "test_id": "LAB006",
-          "date": "2026-01-11",
+          "test_id": "LAB004",
+          "date": "2026-07-16",
           "test_type": "renal_function",
           "items": {
-            "BUN_mmol_L": 12.5,
-            "Scr_umol_L": 95.0,
-            "eGFR_ml_min_1_73m2": 42.0,
-            "CysC_mg_L": 1.8,
-            "urine_protein_g_24h": 0.8
+            "BUN_mmol_L": 13.0,
+            "Scr_umol_L": 98.0,
+            "eGFR_ml_min_1_73m2": 40.0,
+            "CysC_mg_L": 1.85,
+            "urine_protein_g_24h": 0.9
           }
         },
         {
-          "test_id": "LAB007",
-          "date": "2026-01-11",
+          "test_id": "LAB005",
+          "date": "2026-07-16",
           "test_type": "electrolytes",
           "items": {
-            "Na_mmol_L": 135,
-            "K_mmol_L": 5.2,
-            "Ca_mmol_L": 2.05,
-            "P_mmol_L": 1.95,
-            "Cl_mmol_L": 100,
-            "HCO3_mmol_L": 19
+            "Na_mmol_L": 136,
+            "K_mmol_L": 5.3,
+            "Ca_mmol_L": 2.00,
+            "P_mmol_L": 2.00,
+            "Cl_mmol_L": 101,
+            "HCO3_mmol_L": 18
           }
         },
         {
-          "test_id": "LAB008",
-          "date": "2026-01-11",
+          "test_id": "LAB006",
+          "date": "2026-07-16",
           "test_type": "nutrition_markers",
           "items": {
-            "serum_albumin_g_L": 25.0,
-            "prealbumin_mg_L": 110,
+            "serum_albumin_g_L": 26.5,
+            "prealbumin_mg_L": 115,
             "transferrin_g_L": 1.5,
-            "hemoglobin_g_L": 88,
-            "ferritin_ug_L": 30,
-            "vitamin_D_ng_mL": 12,
-            "PTH_pg_mL": 120
+            "hemoglobin_g_L": 85,
+            "ferritin_ug_L": 28,
+            "vitamin_D_ng_mL": 11,
+            "PTH_pg_mL": 130
           }
         }
       ],
       "interventions": [
         {
-          "intervention_id": "INT004",
-          "date": "2026-01-11",
+          "intervention_id": "INT002",
+          "date": "2026-07-16",
           "type": "dietary_counseling",
           "status": "completed",
-          "description": "初始营养宣教：CKD G3b期饮食管理，重点限磷限钾",
-          "outcome": "家长初步了解，但执行困难"
+          "description": "牛奶过敏饮食替代指导，CKD G3b期饮食管理",
+          "outcome": "家长初步了解，执行中"
         },
         {
-          "intervention_id": "INT005",
-          "date": "2026-02-01",
+          "intervention_id": "INT003",
+          "date": "2026-07-20",
           "type": "supplement_adjustment",
           "status": "ongoing",
           "description": "启动EPO治疗纠正贫血，加大碳酸钙D3剂量控制高磷",
           "outcome": "进行中"
-        },
-        {
-          "intervention_id": "INT006",
-          "date": "2026-04-15",
-          "type": "growth_monitoring",
-          "status": "ongoing",
-          "description": "生长监测：每月测量身高体重，评估追赶生长情况",
-          "outcome": "身高增长速率有所改善"
         }
       ]
     },
     {
       "patient_id": "P003",
-      "name": "王小强",
+      "name": "张浩宇",
       "age": 12,
       "gender": "男",
-      "height_cm": 148.0,
-      "weight_kg": 38.0,
+      "height_cm": 152.0,
+      "weight_kg": 40.0,
       "diagnosis": "慢性肾脏病（CKD）- IgA肾病",
-      "ckd_stage": "G1",
-      "admission_date": "2026-06-01",
+      "ckd_stage": "G2",
+      "admission_date": "2026-08-05",
       "attending_doctor": "李主任",
-      "nutritionist": "陈营养师",
+      "nutritionist": "王营养师",
       "allergies": ["海鲜"],
       "nutrition_assessments": [
         {
-          "assessment_id": "NA005",
-          "date": "2026-06-02",
+          "assessment_id": "NA003",
+          "date": "2026-08-06",
           "sga_score": "A",
           "sga_description": "营养状态良好",
           "bmi": 17.3,
           "bmi_percentile": "P50-P75",
-          "serum_albumin_g_l": 40.0,
-          "energy_intake_kcal_kg_d": 35.0,
-          "protein_intake_g_kg_d": 1.5,
+          "serum_albumin_g_l": 39.5,
+          "energy_intake_kcal_kg_d": 36.0,
+          "protein_intake_g_kg_d": 1.6,
           "dietary_compliance": "良好",
-          "notes": "营养状态良好，但蛋白质摄入偏高，需适当调整"
+          "notes": "营养状态良好，但蛋白质摄入偏高，需适当调整以保护肾功能"
         }
       ],
       "diet_plans": [
         {
-          "plan_id": "DP004",
-          "date": "2026-06-02",
+          "plan_id": "DP003",
+          "date": "2026-08-06",
           "status": "ongoing",
           "daily_energy_target_kcal": 2200,
           "protein_limit_g_kg_d": 1.0,
@@ -353,64 +256,793 @@
           "recommended_foods": ["鸡蛋（1个/天）", "瘦肉（80g/天）", "米饭", "各类蔬菜", "苹果", "西瓜（少量）"],
           "restricted_foods": ["海鲜（过敏）", "腌制品", "动物内脏", "高磷加工食品"],
           "meal_schedule": {
-            "breakfast": "牛奶200ml + 全麦面包 + 鸡蛋1个",
+            "breakfast": "豆浆200ml + 全麦面包 + 鸡蛋1个",
             "lunch": "米饭 + 炒瘦肉80g + 炒时蔬",
             "snack": "苹果1个",
             "dinner": "米饭 + 番茄炒蛋 + 炒青菜"
           },
           "supplements": ["碳酸钙D3（随餐）"],
-          "notes": "CKD G1期，营养状态好，重点控制蛋白质不要过量，避免海鲜（过敏）"
+          "notes": "CKD G2期，营养状态好，重点控制蛋白质不要过量，避免海鲜（过敏）"
         }
       ],
       "lab_results": [
         {
-          "test_id": "LAB009",
-          "date": "2026-06-02",
+          "test_id": "LAB007",
+          "date": "2026-08-06",
           "test_type": "renal_function",
           "items": {
-            "BUN_mmol_L": 5.5,
-            "Scr_umol_L": 52.0,
-            "eGFR_ml_min_1_73m2": 110.0,
-            "CysC_mg_L": 0.8,
-            "urine_protein_g_24h": 0.5
+            "BUN_mmol_L": 6.2,
+            "Scr_umol_L": 58.0,
+            "eGFR_ml_min_1_73m2": 85.0,
+            "CysC_mg_L": 1.0,
+            "urine_protein_g_24h": 0.8
           }
         },
         {
-          "test_id": "LAB010",
-          "date": "2026-06-02",
+          "test_id": "LAB008",
+          "date": "2026-08-06",
           "test_type": "electrolytes",
           "items": {
-            "Na_mmol_L": 140,
-            "K_mmol_L": 4.2,
+            "Na_mmol_L": 141,
+            "K_mmol_L": 4.4,
             "Ca_mmol_L": 2.35,
-            "P_mmol_L": 1.30,
-            "Cl_mmol_L": 103,
+            "P_mmol_L": 1.35,
+            "Cl_mmol_L": 104,
             "HCO3_mmol_L": 24
           }
         },
         {
-          "test_id": "LAB011",
-          "date": "2026-06-02",
+          "test_id": "LAB009",
+          "date": "2026-08-06",
           "test_type": "nutrition_markers",
           "items": {
-            "serum_albumin_g_L": 40.0,
-            "prealbumin_mg_L": 280,
-            "transferrin_g_L": 2.8,
-            "hemoglobin_g_L": 135,
-            "ferritin_ug_L": 80,
-            "vitamin_D_ng_mL": 32,
-            "PTH_pg_mL": 35
+            "serum_albumin_g_L": 39.5,
+            "prealbumin_mg_L": 275,
+            "transferrin_g_L": 2.7,
+            "hemoglobin_g_L": 138,
+            "ferritin_ug_L": 85,
+            "vitamin_D_ng_mL": 30,
+            "PTH_pg_mL": 38
           }
         }
       ],
       "interventions": [
         {
-          "intervention_id": "INT007",
-          "date": "2026-06-02",
+          "intervention_id": "INT004",
+          "date": "2026-08-06",
           "type": "dietary_counseling",
           "status": "ongoing",
           "description": "营养宣教：适当控制蛋白质摄入，避免高磷食物，注意海鲜过敏",
           "outcome": "进行中"
+        }
+      ]
+    },
+    {
+      "patient_id": "P004",
+      "name": "刘诗涵",
+      "age": 9,
+      "gender": "女",
+      "height_cm": 128.0,
+      "weight_kg": 26.0,
+      "diagnosis": "慢性肾脏病（CKD）- 紫癜性肾炎",
+      "ckd_stage": "G2",
+      "admission_date": "2026-06-20",
+      "attending_doctor": "赵主任",
+      "nutritionist": "陈营养师",
+      "allergies": ["鸡蛋"],
+      "nutrition_assessments": [
+        {
+          "assessment_id": "NA004",
+          "date": "2026-06-21",
+          "sga_score": "B",
+          "sga_description": "中度营养不良",
+          "bmi": 15.9,
+          "bmi_percentile": "P25-P50",
+          "serum_albumin_g_l": 31.5,
+          "energy_intake_kcal_kg_d": 28.0,
+          "protein_intake_g_kg_d": 1.0,
+          "dietary_compliance": "一般",
+          "notes": "因鸡蛋过敏，优质蛋白来源受限，需指导其他优质蛋白替代"
+        }
+      ],
+      "diet_plans": [
+        {
+          "plan_id": "DP004",
+          "date": "2026-06-21",
+          "status": "ongoing",
+          "daily_energy_target_kcal": 1600,
+          "protein_limit_g_kg_d": 1.0,
+          "sodium_limit_mg_d": 1800,
+          "potassium_limit_mg_d": 2500,
+          "phosphorus_limit_mg_d": 1000,
+          "fluid_limit_ml_d": 1400,
+          "recommended_foods": ["猪瘦肉（60g/天）", "鱼肉（40g/天）", "米饭", "低钾蔬菜", "苹果"],
+          "restricted_foods": ["鸡蛋及蛋制品（过敏）", "香蕉", "橙子", "腌制品"],
+          "meal_schedule": {
+            "breakfast": "小米粥 + 肉松 + 馒头",
+            "lunch": "米饭 + 炒瘦肉60g + 炒青菜",
+            "snack": "苹果1个",
+            "dinner": "面条 + 清蒸鱼40g + 炒黄瓜"
+          },
+          "supplements": ["碳酸钙D3（随餐）", "复合维生素"],
+          "notes": "严格避免鸡蛋及蛋制品，注意肉类与植物蛋白搭配"
+        }
+      ],
+      "lab_results": [
+        {
+          "test_id": "LAB010",
+          "date": "2026-06-21",
+          "test_type": "renal_function",
+          "items": {
+            "BUN_mmol_L": 7.0,
+            "Scr_umol_L": 62.0,
+            "eGFR_ml_min_1_73m2": 82.0,
+            "CysC_mg_L": 1.1,
+            "urine_protein_g_24h": 1.6
+          }
+        },
+        {
+          "test_id": "LAB011",
+          "date": "2026-06-21",
+          "test_type": "electrolytes",
+          "items": {
+            "Na_mmol_L": 139,
+            "K_mmol_L": 4.6,
+            "Ca_mmol_L": 2.15,
+            "P_mmol_L": 1.55,
+            "Cl_mmol_L": 102,
+            "HCO3_mmol_L": 23
+          }
+        },
+        {
+          "test_id": "LAB012",
+          "date": "2026-06-21",
+          "test_type": "nutrition_markers",
+          "items": {
+            "serum_albumin_g_L": 31.5,
+            "prealbumin_mg_L": 175,
+            "transferrin_g_L": 1.9,
+            "hemoglobin_g_L": 112,
+            "ferritin_ug_L": 50,
+            "vitamin_D_ng_mL": 20,
+            "PTH_pg_mL": 55
+          }
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "INT005",
+          "date": "2026-06-21",
+          "type": "dietary_counseling",
+          "status": "completed",
+          "description": "鸡蛋过敏饮食替代指导，低盐优质蛋白饮食宣教",
+          "outcome": "家长掌握替代方案，患儿接受度良好"
+        }
+      ]
+    },
+    {
+      "patient_id": "P005",
+      "name": "王梓睿",
+      "age": 14,
+      "gender": "男",
+      "height_cm": 168.0,
+      "weight_kg": 58.0,
+      "diagnosis": "慢性肾脏病（CKD）- Alport综合征",
+      "ckd_stage": "G4",
+      "admission_date": "2026-07-25",
+      "attending_doctor": "李主任",
+      "nutritionist": "王营养师",
+      "allergies": [],
+      "nutrition_assessments": [
+        {
+          "assessment_id": "NA005",
+          "date": "2026-07-26",
+          "sga_score": "B",
+          "sga_description": "中度营养不良",
+          "bmi": 20.5,
+          "bmi_percentile": "P50-P75",
+          "serum_albumin_g_l": 33.5,
+          "energy_intake_kcal_kg_d": 30.0,
+          "protein_intake_g_kg_d": 0.65,
+          "dietary_compliance": "良好",
+          "notes": "CKD G4期，严格限制蛋白质，需保证充足热量防止肌肉消耗"
+        }
+      ],
+      "diet_plans": [
+        {
+          "plan_id": "DP005",
+          "date": "2026-07-26",
+          "status": "ongoing",
+          "daily_energy_target_kcal": 2600,
+          "protein_limit_g_kg_d": 0.6,
+          "sodium_limit_mg_d": 1500,
+          "potassium_limit_mg_d": 2000,
+          "phosphorus_limit_mg_d": 800,
+          "fluid_limit_ml_d": 1500,
+          "recommended_foods": ["麦淀粉制品", "藕粉", "粉丝", "鸡蛋（1个/天）", "瘦肉（40g/天）", "低钾蔬菜"],
+          "restricted_foods": ["普通米面（限量）", "豆类", "坚果", "香蕉", "橙子", "动物内脏"],
+          "meal_schedule": {
+            "breakfast": "麦淀粉煎饼 + 鸡蛋1个 + 藕粉糊",
+            "lunch": "粉丝拌黄瓜 + 炒瘦肉40g + 麦淀粉馒头",
+            "snack": "苹果1个",
+            "dinner": "麦淀粉面条 + 鸡蛋羹 + 炒白菜"
+          },
+          "supplements": ["碳酸钙D3（随餐）", "铁剂", "复合维生素B族", "酮酸制剂（随餐）"],
+          "notes": "G4期极低蛋白饮食+酮酸疗法，主食以麦淀粉代替普通米面，严格限磷限钾"
+        }
+      ],
+      "lab_results": [
+        {
+          "test_id": "LAB013",
+          "date": "2026-07-26",
+          "test_type": "renal_function",
+          "items": {
+            "BUN_mmol_L": 19.0,
+            "Scr_umol_L": 290.0,
+            "eGFR_ml_min_1_73m2": 20.0,
+            "CysC_mg_L": 3.3,
+            "urine_protein_g_24h": 2.0
+          }
+        },
+        {
+          "test_id": "LAB014",
+          "date": "2026-07-26",
+          "test_type": "electrolytes",
+          "items": {
+            "Na_mmol_L": 137,
+            "K_mmol_L": 5.5,
+            "Ca_mmol_L": 2.00,
+            "P_mmol_L": 2.15,
+            "Cl_mmol_L": 99,
+            "HCO3_mmol_L": 17
+          }
+        },
+        {
+          "test_id": "LAB015",
+          "date": "2026-07-26",
+          "test_type": "nutrition_markers",
+          "items": {
+            "serum_albumin_g_L": 33.5,
+            "prealbumin_mg_L": 185,
+            "transferrin_g_L": 2.0,
+            "hemoglobin_g_L": 92,
+            "ferritin_ug_L": 32,
+            "vitamin_D_ng_mL": 13,
+            "PTH_pg_mL": 190
+          }
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "INT006",
+          "date": "2026-07-26",
+          "type": "dietary_counseling",
+          "status": "ongoing",
+          "description": "极低蛋白饮食+酮酸疗法详细指导，麦淀粉主食制作教学",
+          "outcome": "进行中，患儿对麦淀粉食物接受度尚可"
+        },
+        {
+          "intervention_id": "INT007",
+          "date": "2026-08-05",
+          "type": "supplement_adjustment",
+          "status": "completed",
+          "description": "纠正酸中毒，增加磷结合剂剂量",
+          "outcome": "血磷有所下降，碳酸氢根回升"
+        }
+      ]
+    },
+    {
+      "patient_id": "P006",
+      "name": "孙梦琪",
+      "age": 4,
+      "gender": "女",
+      "height_cm": 102.0,
+      "weight_kg": 15.5,
+      "diagnosis": "慢性肾脏病（CKD）- 先天性肾病综合征",
+      "ckd_stage": "G2",
+      "admission_date": "2026-08-01",
+      "attending_doctor": "赵主任",
+      "nutritionist": "陈营养师",
+      "allergies": [],
+      "nutrition_assessments": [
+        {
+          "assessment_id": "NA006",
+          "date": "2026-08-02",
+          "sga_score": "C",
+          "sga_description": "重度营养不良",
+          "bmi": 14.9,
+          "bmi_percentile": "P10-P25",
+          "serum_albumin_g_l": 19.5,
+          "energy_intake_kcal_kg_d": 24.0,
+          "protein_intake_g_kg_d": 0.8,
+          "dietary_compliance": "差",
+          "notes": "大量蛋白尿，严重低蛋白血症，水肿明显，口服摄入不足，需肠内营养支持"
+        }
+      ],
+      "diet_plans": [
+        {
+          "plan_id": "DP006",
+          "date": "2026-08-02",
+          "status": "ongoing",
+          "daily_energy_target_kcal": 1100,
+          "protein_limit_g_kg_d": 1.0,
+          "sodium_limit_mg_d": 800,
+          "potassium_limit_mg_d": 1500,
+          "phosphorus_limit_mg_d": 600,
+          "fluid_limit_ml_d": 800,
+          "recommended_foods": ["肾病专用配方奶", "鸡蛋（1个/天）", "鱼肉泥（30g/天）", "软米饭", "蔬菜泥"],
+          "restricted_foods": ["高盐食物", "高钾食物", "腌制品"],
+          "meal_schedule": {
+            "breakfast": "肾病专用配方奶150ml + 蒸蛋羹",
+            "lunch": "软米饭 + 鱼肉泥30g + 蔬菜泥",
+            "snack": "口服营养补充（ONS）",
+            "dinner": "烂面条 + 肉末20g + 碎菜叶"
+          },
+          "supplements": ["碳酸钙D3（随餐）", "铁剂", "白蛋白输注（医疗）", "利尿剂"],
+          "notes": "严重低蛋白血症水肿，严格限钠限水，口服不足时鼻饲补充"
+        }
+      ],
+      "lab_results": [
+        {
+          "test_id": "LAB016",
+          "date": "2026-08-02",
+          "test_type": "renal_function",
+          "items": {
+            "BUN_mmol_L": 6.8,
+            "Scr_umol_L": 32.0,
+            "eGFR_ml_min_1_73m2": 88.0,
+            "CysC_mg_L": 0.98,
+            "urine_protein_g_24h": 4.8
+          }
+        },
+        {
+          "test_id": "LAB017",
+          "date": "2026-08-02",
+          "test_type": "electrolytes",
+          "items": {
+            "Na_mmol_L": 131,
+            "K_mmol_L": 4.1,
+            "Ca_mmol_L": 1.90,
+            "P_mmol_L": 1.75,
+            "Cl_mmol_L": 94,
+            "HCO3_mmol_L": 22
+          }
+        },
+        {
+          "test_id": "LAB018",
+          "date": "2026-08-02",
+          "test_type": "nutrition_markers",
+          "items": {
+            "serum_albumin_g_L": 19.5,
+            "prealbumin_mg_L": 85,
+            "transferrin_g_L": 1.3,
+            "hemoglobin_g_L": 92,
+            "ferritin_ug_L": 38,
+            "vitamin_D_ng_mL": 11,
+            "PTH_pg_mL": 75
+          }
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "INT008",
+          "date": "2026-08-02",
+          "type": "enteral_nutrition",
+          "status": "ongoing",
+          "description": "启动口服营养补充（ONS），指导肾病专用营养粉使用",
+          "outcome": "进行中，水肿逐渐消退"
+        }
+      ]
+    },
+    {
+      "patient_id": "P007",
+      "name": "周子航",
+      "age": 11,
+      "gender": "男",
+      "height_cm": 142.0,
+      "weight_kg": 48.0,
+      "diagnosis": "慢性肾脏病（CKD）- 肥胖相关性肾病",
+      "ckd_stage": "G1",
+      "admission_date": "2026-08-15",
+      "attending_doctor": "李主任",
+      "nutritionist": "王营养师",
+      "allergies": [],
+      "nutrition_assessments": [
+        {
+          "assessment_id": "NA007",
+          "date": "2026-08-16",
+          "sga_score": "A",
+          "sga_description": "营养过剩",
+          "bmi": 23.8,
+          "bmi_percentile": ">P97",
+          "serum_albumin_g_l": 43.0,
+          "energy_intake_kcal_kg_d": 48.0,
+          "protein_intake_g_kg_d": 2.2,
+          "dietary_compliance": "差",
+          "notes": "重度肥胖，能量和蛋白质摄入严重超标，需制定减重方案"
+        }
+      ],
+      "diet_plans": [
+        {
+          "plan_id": "DP007",
+          "date": "2026-08-16",
+          "status": "ongoing",
+          "daily_energy_target_kcal": 1800,
+          "protein_limit_g_kg_d": 1.0,
+          "sodium_limit_mg_d": 2000,
+          "potassium_limit_mg_d": 3000,
+          "phosphorus_limit_mg_d": 1200,
+          "fluid_limit_ml_d": 2000,
+          "recommended_foods": ["鸡蛋（1个/天）", "去皮禽肉/鱼肉（60g/天）", "粗粮", "大量低热量蔬菜", "柚子", "猕猴桃"],
+          "restricted_foods": ["油炸食品", "甜食", "含糖饮料", "肥肉", "快餐"],
+          "meal_schedule": {
+            "breakfast": "脱脂牛奶200ml + 全麦面包1片 + 鸡蛋1个",
+            "lunch": "杂粮饭 + 清蒸鱼60g + 凉拌菠菜 + 炒冬瓜",
+            "snack": "猕猴桃1个",
+            "dinner": "荞麦面 + 鸡胸肉丝 + 大量蔬菜"
+          },
+          "supplements": ["复合维生素"],
+          "notes": "减重饮食，控制总热量，增加膳食纤维，鼓励运动"
+        }
+      ],
+      "lab_results": [
+        {
+          "test_id": "LAB019",
+          "date": "2026-08-16",
+          "test_type": "renal_function",
+          "items": {
+            "BUN_mmol_L": 6.5,
+            "Scr_umol_L": 68.0,
+            "eGFR_ml_min_1_73m2": 125.0,
+            "CysC_mg_L": 0.95,
+            "urine_protein_g_24h": 1.5
+          }
+        },
+        {
+          "test_id": "LAB020",
+          "date": "2026-08-16",
+          "test_type": "electrolytes",
+          "items": {
+            "Na_mmol_L": 141,
+            "K_mmol_L": 4.4,
+            "Ca_mmol_L": 2.32,
+            "P_mmol_L": 1.42,
+            "Cl_mmol_L": 104,
+            "HCO3_mmol_L": 24
+          }
+        },
+        {
+          "test_id": "LAB021",
+          "date": "2026-08-16",
+          "test_type": "nutrition_markers",
+          "items": {
+            "serum_albumin_g_L": 43.0,
+            "prealbumin_mg_L": 310,
+            "transferrin_g_L": 3.1,
+            "hemoglobin_g_L": 142,
+            "ferritin_ug_L": 95,
+            "vitamin_D_ng_mL": 17,
+            "PTH_pg_mL": 42
+          }
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "INT009",
+          "date": "2026-08-16",
+          "type": "dietary_counseling",
+          "status": "ongoing",
+          "description": "肥胖管理宣教，制定家庭减重计划，行为干预",
+          "outcome": "进行中，需家长高度配合"
+        }
+      ]
+    },
+    {
+      "patient_id": "P008",
+      "name": "吴佳颖",
+      "age": 8,
+      "gender": "女",
+      "height_cm": 125.0,
+      "weight_kg": 24.0,
+      "diagnosis": "慢性肾脏病（CKD）- 慢性肾小球肾炎",
+      "ckd_stage": "G3a",
+      "admission_date": "2026-07-10",
+      "attending_doctor": "赵主任",
+      "nutritionist": "陈营养师",
+      "allergies": ["花生"],
+      "nutrition_assessments": [
+        {
+          "assessment_id": "NA008",
+          "date": "2026-07-11",
+          "sga_score": "B",
+          "sga_description": "中度营养不良",
+          "bmi": 15.4,
+          "bmi_percentile": "P25-P50",
+          "serum_albumin_g_l": 29.5,
+          "energy_intake_kcal_kg_d": 25.0,
+          "protein_intake_g_kg_d": 0.8,
+          "dietary_compliance": "一般",
+          "notes": "长期食欲不振，肌肉消耗明显，需加强营养支持"
+        }
+      ],
+      "diet_plans": [
+        {
+          "plan_id": "DP008",
+          "date": "2026-07-11",
+          "status": "ongoing",
+          "daily_energy_target_kcal": 1500,
+          "protein_limit_g_kg_d": 0.8,
+          "sodium_limit_mg_d": 1500,
+          "potassium_limit_mg_d": 2000,
+          "phosphorus_limit_mg_d": 800,
+          "fluid_limit_ml_d": 1200,
+          "recommended_foods": ["肾病专用营养粉", "鸡蛋（1个/天）", "瘦肉（40g/天）", "麦淀粉制品", "低钾蔬菜"],
+          "restricted_foods": ["花生及坚果（过敏）", "香蕉", "橙子", "腌制品"],
+          "meal_schedule": {
+            "breakfast": "肾病专用营养粉冲服 + 麦淀粉发糕",
+            "lunch": "米饭 + 炒瘦肉40g + 炒西葫芦",
+            "snack": "苹果半个",
+            "dinner": "麦淀粉面条 + 鸡蛋羹 + 炒白菜"
+          },
+          "supplements": ["碳酸钙D3（随餐）", "铁剂", "肾病专用肠内营养粉（加餐）"],
+          "notes": "口服摄入不足，增加肠内营养制剂补充，避免花生"
+        }
+      ],
+      "lab_results": [
+        {
+          "test_id": "LAB022",
+          "date": "2026-07-11",
+          "test_type": "renal_function",
+          "items": {
+            "BUN_mmol_L": 10.5,
+            "Scr_umol_L": 85.0,
+            "eGFR_ml_min_1_73m2": 52.0,
+            "CysC_mg_L": 1.5,
+            "urine_protein_g_24h": 1.2
+          }
+        },
+        {
+          "test_id": "LAB023",
+          "date": "2026-07-11",
+          "test_type": "electrolytes",
+          "items": {
+            "Na_mmol_L": 137,
+            "K_mmol_L": 4.8,
+            "Ca_mmol_L": 2.10,
+            "P_mmol_L": 1.70,
+            "Cl_mmol_L": 100,
+            "HCO3_mmol_L": 20
+          }
+        },
+        {
+          "test_id": "LAB024",
+          "date": "2026-07-11",
+          "test_type": "nutrition_markers",
+          "items": {
+            "serum_albumin_g_L": 29.5,
+            "prealbumin_mg_L": 140,
+            "transferrin_g_L": 1.7,
+            "hemoglobin_g_L": 98,
+            "ferritin_ug_L": 35,
+            "vitamin_D_ng_mL": 14,
+            "PTH_pg_mL": 85
+          }
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "INT010",
+          "date": "2026-07-11",
+          "type": "enteral_nutrition",
+          "status": "ongoing",
+          "description": "启动口服营养补充（ONS），指导肾病专用营养粉使用",
+          "outcome": "进行中，患儿逐渐适应口味"
+        }
+      ]
+    },
+    {
+      "patient_id": "P009",
+      "name": "郑博文",
+      "age": 15,
+      "gender": "男",
+      "height_cm": 175.0,
+      "weight_kg": 62.0,
+      "diagnosis": "慢性肾脏病（CKD）- 多囊肾",
+      "ckd_stage": "G5（血液透析）",
+      "admission_date": "2026-08-08",
+      "attending_doctor": "李主任",
+      "nutritionist": "王营养师",
+      "allergies": [],
+      "nutrition_assessments": [
+        {
+          "assessment_id": "NA009",
+          "date": "2026-08-09",
+          "sga_score": "B",
+          "sga_description": "中度营养不良",
+          "bmi": 20.2,
+          "bmi_percentile": "P25-P50",
+          "serum_albumin_g_l": 34.0,
+          "energy_intake_kcal_kg_d": 29.0,
+          "protein_intake_g_kg_d": 0.9,
+          "dietary_compliance": "一般",
+          "notes": "透析前饮食控制过严，透析后蛋白质需求增加，需调整"
+        }
+      ],
+      "diet_plans": [
+        {
+          "plan_id": "DP009",
+          "date": "2026-08-09",
+          "status": "ongoing",
+          "daily_energy_target_kcal": 2200,
+          "protein_limit_g_kg_d": 1.2,
+          "sodium_limit_mg_d": 2000,
+          "potassium_limit_mg_d": 2000,
+          "phosphorus_limit_mg_d": 1000,
+          "fluid_limit_ml_d": 1000,
+          "recommended_foods": ["鸡蛋（1-2个/天）", "瘦肉/鱼肉（100g/天）", "米饭", "低钾蔬菜", "苹果"],
+          "restricted_foods": ["香蕉", "橙子", "土豆", "蘑菇", "坚果", "老火汤"],
+          "meal_schedule": {
+            "breakfast": "牛奶200ml + 面包 + 鸡蛋1个",
+            "lunch": "米饭 + 炒瘦肉80g + 炒青菜（水煮去钾）",
+            "snack": "苹果1个",
+            "dinner": "米饭 + 清蒸鱼80g + 炒黄瓜"
+          },
+          "supplements": ["碳酸钙/醋酸钙（随餐）", "活性维生素D", "水溶性维生素（透析日补充）", "EPO"],
+          "notes": "血液透析患者，高蛋白饮食（1.2g/kg/d），严格限水限钾限磷"
+        }
+      ],
+      "lab_results": [
+        {
+          "test_id": "LAB025",
+          "date": "2026-08-09",
+          "test_type": "renal_function",
+          "items": {
+            "BUN_mmol_L": 23.0,
+            "Scr_umol_L": 880.0,
+            "eGFR_ml_min_1_73m2": 7.0,
+            "CysC_mg_L": 5.8,
+            "urine_protein_g_24h": 0.6
+          }
+        },
+        {
+          "test_id": "LAB026",
+          "date": "2026-08-09",
+          "test_type": "electrolytes",
+          "items": {
+            "Na_mmol_L": 139,
+            "K_mmol_L": 5.3,
+            "Ca_mmol_L": 2.05,
+            "P_mmol_L": 2.25,
+            "Cl_mmol_L": 101,
+            "HCO3_mmol_L": 19
+          }
+        },
+        {
+          "test_id": "LAB027",
+          "date": "2026-08-09",
+          "test_type": "nutrition_markers",
+          "items": {
+            "serum_albumin_g_L": 34.0,
+            "prealbumin_mg_L": 210,
+            "transferrin_g_L": 2.1,
+            "hemoglobin_g_L": 105,
+            "ferritin_ug_L": 160,
+            "vitamin_D_ng_mL": 11,
+            "PTH_pg_mL": 260
+          }
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "INT011",
+          "date": "2026-08-09",
+          "type": "dietary_counseling",
+          "status": "ongoing",
+          "description": "透析期营养宣教：增加蛋白质摄入，严格限水限钾限磷",
+          "outcome": "进行中，患儿对限水表示困难"
+        }
+      ]
+    },
+    {
+      "patient_id": "P010",
+      "name": "黄思颖",
+      "age": 6,
+      "gender": "女",
+      "height_cm": 112.0,
+      "weight_kg": 18.5,
+      "diagnosis": "慢性肾脏病（CKD）- 溶血尿毒综合征（HUS）恢复期",
+      "ckd_stage": "G2",
+      "admission_date": "2026-08-12",
+      "attending_doctor": "赵主任",
+      "nutritionist": "陈营养师",
+      "allergies": [],
+      "nutrition_assessments": [
+        {
+          "assessment_id": "NA010",
+          "date": "2026-08-13",
+          "sga_score": "B",
+          "sga_description": "中度营养不良",
+          "bmi": 14.8,
+          "bmi_percentile": "P10-P25",
+          "serum_albumin_g_l": 30.5,
+          "energy_intake_kcal_kg_d": 27.0,
+          "protein_intake_g_kg_d": 1.1,
+          "dietary_compliance": "良好",
+          "notes": "急性期后恢复中，贫血较重，需加强铁和蛋白质补充"
+        }
+      ],
+      "diet_plans": [
+        {
+          "plan_id": "DP010",
+          "date": "2026-08-13",
+          "status": "ongoing",
+          "daily_energy_target_kcal": 1300,
+          "protein_limit_g_kg_d": 1.0,
+          "sodium_limit_mg_d": 1500,
+          "potassium_limit_mg_d": 2500,
+          "phosphorus_limit_mg_d": 1000,
+          "fluid_limit_ml_d": 1100,
+          "recommended_foods": ["鸡蛋（1个/天）", "红肉（瘦猪肉/牛肉 50g/天）", "米饭", "富含维生素C蔬菜", "橙子（少量）"],
+          "restricted_foods": ["高钾食物（大量）", "腌制品"],
+          "meal_schedule": {
+            "breakfast": "小米粥 + 鸡蛋1个 + 馒头",
+            "lunch": "米饭 + 炒瘦牛肉50g + 炒西红柿",
+            "snack": "橙子半个",
+            "dinner": "面条 + 肉末 + 炒青菜"
+          },
+          "supplements": ["铁剂（餐后）", "维生素C（随铁剂）", "碳酸钙D3"],
+          "notes": "纠正贫血，增加红肉摄入，维生素C促进铁吸收"
+        }
+      ],
+      "lab_results": [
+        {
+          "test_id": "LAB028",
+          "date": "2026-08-13",
+          "test_type": "renal_function",
+          "items": {
+            "BUN_mmol_L": 7.8,
+            "Scr_umol_L": 58.0,
+            "eGFR_ml_min_1_73m2": 78.0,
+            "CysC_mg_L": 1.15,
+            "urine_protein_g_24h": 0.4
+          }
+        },
+        {
+          "test_id": "LAB029",
+          "date": "2026-08-13",
+          "test_type": "electrolytes",
+          "items": {
+            "Na_mmol_L": 140,
+            "K_mmol_L": 4.6,
+            "Ca_mmol_L": 2.20,
+            "P_mmol_L": 1.60,
+            "Cl_mmol_L": 103,
+            "HCO3_mmol_L": 22
+          }
+        },
+        {
+          "test_id": "LAB030",
+          "date": "2026-08-13",
+          "test_type": "nutrition_markers",
+          "items": {
+            "serum_albumin_g_L": 30.5,
+            "prealbumin_mg_L": 165,
+            "transferrin_g_L": 1.8,
+            "hemoglobin_g_L": 88,
+            "ferritin_ug_L": 18,
+            "vitamin_D_ng_mL": 19,
+            "PTH_pg_mL": 52
+          }
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "INT012",
+          "date": "2026-08-13",
+          "type": "supplement_adjustment",
+          "status": "ongoing",
+          "description": "强化补铁治疗，指导富含铁和维C食物搭配",
+          "outcome": "进行中，定期复查血常规"
         }
       ]
     }
