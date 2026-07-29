@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "hospital-mock-mcp500"         # 确保这是在 PyPI 上唯一的包名
+name = "hospital_mock_mcp500"         # 1. 确保这是你在 PyPI 注册的包名
 version = "0.1.0"
-description = "Hospital mock MCP server with embedded mock.json"
+description = "Hospital mock MCP server"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -14,3 +14,7 @@ dependencies = [
 
 [project.scripts]
 hospital-mock-mcp = "my_mock_server.server:main"
+
+# 关键设置：显式告诉 Hatchling 你的代码在 src/my_mock_server 文件夹里
+[tool.hatch.build.targets.wheel]
+packages = ["src/my_mock_server"]
