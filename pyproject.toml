@@ -1,14 +1,17 @@
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "my-mock-mcp"
-version = "0.1.0"
-description = "Mock Data MCP Server for Nexent"
+name = "pediatric-renal-nutrition-mcp"
+version = "1.0.0"
+description = "童肾营养师辅助决策数据查询 MCP 服务 —— 提供儿童肾脏病营养模拟数据查询"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
 dependencies = [
-    "mcp>=1.0.0"
+    "mcp>=1.2.0",
 ]
 
 [project.scripts]
-my-mock-mcp = "server:main"
+pediatric-renal-nutrition-mcp = "app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
